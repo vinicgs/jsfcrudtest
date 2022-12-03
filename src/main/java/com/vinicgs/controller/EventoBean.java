@@ -27,7 +27,14 @@ public class EventoBean implements Serializable {
 		clear();
 		return "";
 	}
-	
+
+	// #{eventoBean.excluirEvento(e)}
+	public String excluirEvento(Evento e) {
+		eventos.remove(e);
+		System.out.println("Evento " + e.getNome() + " excluido com sucesso!");
+		return "";
+	}
+
 	public void clear() {
 		this.evento = new Evento();
 	}
