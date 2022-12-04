@@ -26,10 +26,17 @@ public class EventoBean implements Serializable {
 		System.out.println("Evento " + evento.getNome() + " cadastrado com sucesso!");
 		clear();
 		return "";
+
 	}
+
 	public String excluirEvento(Evento e) {
 		eventos.remove(e);
 		System.out.println("Evento " + e.getNome() + " excluido com sucesso!");
+		return "";
+	}
+
+	public String editarEvento(Evento e) {
+		evento = e;
 		return "";
 	}
 
